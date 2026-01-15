@@ -6,72 +6,122 @@
   <title>Afraz Sheik | Official Links</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      background: #0f172a;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1e293b, #020617);
       color: #fff;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
     }
 
     .card {
-      background: #020617;
-      padding: 28px;
-      border-radius: 16px;
+      background: rgba(2, 6, 23, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 32px 28px;
+      border-radius: 22px;
       width: 100%;
       max-width: 420px;
       text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.55);
+    }
+
+    /* Avatar */
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+      border: 2px solid #6366f1;
+      object-fit: cover;
     }
 
     h1 {
-      margin-bottom: 8px;
-      font-size: 22px;
+      margin: 8px 0 6px;
+      font-size: 24px;
+      font-weight: 600;
     }
 
-    p {
+    .tagline {
       font-size: 14px;
-      opacity: 0.8;
-      margin-bottom: 24px;
+      opacity: 0.85;
+      margin-bottom: 28px;
     }
 
-    a {
-      display: block;
+    /* Buttons */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       text-decoration: none;
       background: #1e293b;
       color: #fff;
-      padding: 14px;
-      border-radius: 12px;
-      margin-bottom: 14px;
+      padding: 15px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      font-size: 16px;
       font-weight: 500;
-      transition: 0.2s;
+      transition: transform 0.15s ease, background 0.2s ease;
     }
 
-    a:hover {
+    .btn:hover {
       background: #6366f1;
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      font-size: 18px;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 18px;
+      font-size: 12px;
+      opacity: 0.5;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <h1>Afraz Sheik</h1>
-    <p>Tamil Curiosity • Science • Math</p>
 
-    <a href="https://www.instagram.com/afraz.sheik" target="_blank">
+    <!-- OPTIONAL PROFILE IMAGE -->
+    <!--
+      If you want image:
+      1) Upload a photo named profile.jpg to the repo
+      2) Uncomment the img tag below
+    -->
+    <!-- <img src="profile.jpg" alt="Afraz Sheik" class="avatar"> -->
+
+    <h1>Afraz Sheik</h1>
+    <div class="tagline">Tamil Curiosity • Science • Math</div>
+
+    <a class="btn" href="https://www.instagram.com/afraz.sheik" target="_blank">
+      <span class="icon">📸</span>
       Instagram
     </a>
 
-    <a href="https://www.facebook.com/share/1DH79RTpDT/" target="_blank">
+    <a class="btn" href="https://www.facebook.com/share/1DH79RTpDT/" target="_blank">
+      <span class="icon">📘</span>
       Facebook
     </a>
 
-    <a href="https://whatsapp.com/channel/0029VbCASldLqQeZMzwhSg3h" target="_blank">
+    <a class="btn" href="https://whatsapp.com/channel/0029VbCASldLqQeZMzwhSg3h" target="_blank">
+      <span class="icon">💬</span>
       WhatsApp Channel
     </a>
+
+    <div class="footer">
+      © Afraz Sheik
+    </div>
+
   </div>
 
 </body>
