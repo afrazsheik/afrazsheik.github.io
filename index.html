@@ -6,95 +6,138 @@
 <title>Afraz Sheik | Official Links</title>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: radial-gradient(circle at top, #1e293b 0%, #020617 70%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-  }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top, #1e293b 0%, #020617 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
 
-  .card {
-    width: 100%;
-    max-width: 420px;
-    padding: 34px 28px;
-    border-radius: 26px;
-    background: linear-gradient(180deg, #020617, #020617cc);
-    box-shadow: 0 30px 70px rgba(0,0,0,0.65);
-    text-align: center;
-  }
+/* ===== Card ===== */
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 28px;
+  border-radius: 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(15,23,42,0.9),
+    rgba(2,6,23,0.95)
+  );
+  box-shadow:
+    0 40px 90px rgba(0,0,0,0.7),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
 
-  /* Avatar */
-  .avatar {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 18px;
-    border: 2px solid #6366f1;
-    box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
-  }
+/* ===== Avatar ===== */
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 2px solid #6366f1;
+  box-shadow:
+    0 0 0 6px rgba(99,102,241,0.15),
+    0 10px 30px rgba(0,0,0,0.5);
+}
 
-  h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-  }
+/* ===== Text ===== */
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
 
-  .tagline {
-    margin-top: 6px;
-    font-size: 14px;
-    opacity: 0.85;
-    margin-bottom: 30px;
-  }
+.tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 32px;
+}
 
-  /* Buttons */
-  .link {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 15px 18px;
-    margin-bottom: 16px;
-    background: #1e293b;
-    border-radius: 16px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
-  }
+/* ===== Buttons ===== */
+.link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  border-radius: 18px;
 
-  .link:hover {
-    background: #6366f1;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(99,102,241,0.35);
-  }
+  background: rgba(30,41,59,0.85);
+  backdrop-filter: blur(4px);
 
-  .icon {
-    width: 22px;
-    height: 22px;
-    flex-shrink: 0;
-    fill: currentColor;
-  }
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
 
-  .label {
-    flex: 1;
-    text-align: center;
-    transform: translateX(-12px); /* optical centering */
-  }
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.04);
 
-  footer {
-    margin-top: 20px;
-    font-size: 12px;
-    opacity: 0.45;
-  }
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.link:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.label {
+  flex: 1;
+  text-align: center;
+  transform: translateX(-12px); /* optical centering */
+}
+
+/* ===== Platform Colors ===== */
+.link.instagram:hover {
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+  box-shadow: 0 16px 40px rgba(221,42,123,0.45);
+}
+
+.link.facebook:hover {
+  background: linear-gradient(135deg, #1877f2, #145dd1);
+  box-shadow: 0 16px 40px rgba(24,119,242,0.45);
+}
+
+.link.whatsapp:hover {
+  background: linear-gradient(135deg, #25D366, #1EBE5D);
+  box-shadow: 0 16px 40px rgba(37,211,102,0.45);
+}
+
+.link.youtube:hover {
+  background: linear-gradient(135deg, #ff0033, #cc0000);
+  box-shadow: 0 16px 40px rgba(255,0,51,0.45);
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 24px;
+  font-size: 12px;
+  opacity: 0.45;
+}
 </style>
 </head>
 
@@ -102,14 +145,13 @@
 
 <div class="card">
 
-  <!-- Avatar -->
   <img src="./profile.jpg" alt="Afraz Sheik" class="avatar" />
 
   <h1>Afraz Sheik</h1>
   <div class="tagline">Tamil Curiosity • Science • Math</div>
 
   <!-- Instagram -->
-  <a class="link" href="https://www.instagram.com/afraz.sheik" target="_blank">
+  <a class="link instagram" href="https://www.instagram.com/afraz.sheik" target="_blank">
     <svg class="icon" viewBox="0 0 24 24">
       <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5.5A4.5 4.5 0 1016.5 12 4.5 4.5 0 0012 7.5zm0 7.4A2.9 2.9 0 1114.9 12 2.9 2.9 0 0112 14.9zm4.8-7.9a1 1 0 11-1 1 1 1 0 011-1z"/>
     </svg>
@@ -117,15 +159,23 @@
   </a>
 
   <!-- Facebook -->
-  <a class="link" href="https://www.facebook.com/share/1DH79RTpDT/" target="_blank">
+  <a class="link facebook" href="https://www.facebook.com/share/1DH79RTpDT/" target="_blank">
     <svg class="icon" viewBox="0 0 24 24">
       <path d="M13 22v-8h3l.5-4H13V7.5c0-1.1.3-1.8 1.9-1.8H16V2.1a25 25 0 00-3 .2C10 2.3 8 4.2 8 7.7V10H5v4h3v8z"/>
     </svg>
     <span class="label">Facebook</span>
   </a>
 
+  <!-- YouTube -->
+  <a class="link youtube" href="https://youtube.com/@afrazsheik" target="_blank">
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.3 31.3 0 000 12a31.3 31.3 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.3 31.3 0 0024 12a31.3 31.3 0 00-.5-5.8zM9.6 15.5V8.5l6.2 3.5-6.2 3.5z"/>
+    </svg>
+    <span class="label">YouTube</span>
+  </a>
+
   <!-- WhatsApp -->
-  <a class="link" href="https://whatsapp.com/channel/0029VbCASldLdQeZMzhwSg3h" target="_blank">
+  <a class="link whatsapp" href="https://whatsapp.com/channel/0029VbCASldLdQeZMzhwSg3h" target="_blank">
     <svg class="icon" viewBox="0 0 24 24">
       <path d="M12 2a10 10 0 00-8.9 14.6L2 22l5.6-1.5A10 10 0 1012 2zm5.4 14.6c-.2.5-1 1-1.4 1s-.9.2-3-1c-2.4-1.2-4-3.4-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2.1c.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.8.6s1 2.3 1.1 2.5c.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.6.6-.2.2-.4.4-.2.8.2.4.9 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.4.2.6.2.8 0 .2-.2 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.3 1.1 2.7 1.3.4.2.7.3.8.4.1.1.1.6-.1 1.1z"/>
     </svg>
